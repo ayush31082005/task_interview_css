@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-700 bg-white antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
